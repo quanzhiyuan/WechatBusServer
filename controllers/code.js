@@ -10,7 +10,9 @@ notLogin.code = 10000
 notLogin.msg = '未登录'
 exports.notLogin = notLogin  // 未登录返回值
 
-let login = Objet.create(res)
+let login = Object.create(res)
 login.code = 10001
 login.msg = '已登录'
 exports.login = login
+
+exports.success = res  // 成功返回
